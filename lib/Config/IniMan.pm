@@ -13,7 +13,7 @@ use warnings;
 use Tie::IxHash;
 use utf8;
 
-our $VERSION = '1.0';
+our $VERSION = '1.10';
 #=========================================================#
 =encoding utf-8
 
@@ -166,10 +166,12 @@ my ($self) = shift;
     }
 
 	if (@_) {
+		# set parameter value in the current section
 		$self->{data}->{$self->{section}}->{$method} = $_[0];
 		return $self;
 	}
 	else {
+		# return parameter value from current section
 		return $self->{data}->{$self->{section}}->{$method};
 	}
 }
