@@ -13,7 +13,7 @@ use warnings;
 use Tie::IxHash;
 use utf8;
 
-our $VERSION = '1.10';
+our $VERSION = '1.20';
 #=========================================================#
 =encoding utf-8
 
